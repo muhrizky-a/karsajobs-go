@@ -32,7 +32,7 @@ jobs:
 
 # Orchestrate jobs using workflows
 workflows:
-  lint-test-and-build-karsajobs:
+  ci-and-cd-karsajobs:
     jobs:
       - ci
       - cd
