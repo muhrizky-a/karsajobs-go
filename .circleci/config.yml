@@ -26,9 +26,13 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Testing command
+          name: view env
           command: |
             echo $REMOTE_HOST
+      - run:
+          name: Ping env
+          command: |
+            ping $REMOTE_HOST
 
 # Orchestrate jobs using workflows
 workflows:
