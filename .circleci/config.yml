@@ -30,9 +30,9 @@ jobs:
           command: |
             echo $REMOTE_HOST
       - run:
-          name: Ping env
+          name: curl env
           command: |
-            ping $REMOTE_HOST
+            curl $REMOTE_HOST
 
 # Orchestrate jobs using workflows
 workflows:
